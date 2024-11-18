@@ -12,9 +12,43 @@
 - **Wi-Fi**
 - **Configurable Interface**: Dynamically forward data between any combination of UART, Bluetooth, and Wi-Fi.
 
-## Development
+## Building and Flashing
 
-This project is currently under devlopment checkout **dev** branch to look at lastest devlopment.
+1. **Install ESP-IDF**
+
+Ensure ESP-IDF is correctly installed and configured on your system. Follow the official [ESP-IDF Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/).
+
+2. **Clone the Repository**
+```bash
+git clone https://github.com/your-repo/uart-bridge.git
+cd uart-bridge
+```
+
+3. **Set the Target Chip**
+```bash
+idf.py set-target esp32
+```
+
+4. **Configure the Project**
+Run the following command to configure the project
+```bash
+idf.py menuconfig
+```
+
+5. **Build the Project**
+```bash
+idf.py build
+```
+
+6. **Flash the Firmware**
+```bash
+idf.py flash
+```
+   
+7. **Monitor the Serial Output**
+```bash
+idf.py monitor
+```
 
 ## Contributing
 
